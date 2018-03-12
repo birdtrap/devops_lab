@@ -5,7 +5,6 @@
 # pylint: disable=line-too-long
 # pylint: disable=too-many-instance-attributes
 from datetime import datetime
-import os
 import json
 import time
 import psutil
@@ -51,17 +50,10 @@ def SNAP_STRING_TRANSFORM(MY_SNAP):
 
 def FILE_TXT(MY_SNAP):
     """file txt"""
-    if os.path.exists("output.txt"):
-        FI = open("output.txt", "a+")
-        FI.write(SNAP_STRING_TRANSFORM(MY_SNAP))
-        FI.write('\n')
-        FI.close()
-    else:
-        FI = open("output.txt", "w+")
-        FI.write('NUMBER       |TIMESTAMP              |CPU_LOAD_IN_%      |MEM_USAGE  |VMEM_USAGE        |IO_READ        |IO_WRITE    |NET_USE             \n')
-        FI.write(SNAP_STRING_TRANSFORM(MY_SNAP))
-        FI.write('\n')
-        FI.close()
+    FI = open("output.txt", "a+")
+    FI.write(SNAP_STRING_TRANSFORM(MY_SNAP))
+    FI.write('\n')
+    FI.close()
 
 
 def SNAP_DICTIONARY_TRANSFORM(MY_SNAP):
@@ -79,14 +71,17 @@ def SNAP_DICTIONARY_TRANSFORM(MY_SNAP):
 
 def FILE_JSON(MY_SNAP):
     """file json"""
-    if os.path.exists("output.json"):
-        FI = open("output.json", "a+")
-        json.dump(SNAP_DICTIONARY_TRANSFORM(MY_SNAP), FI, indent=2, ensure_ascii=False)
-        FI.close()
-    else:
-        FI = open("output.json", "w+")
-        json.dump(SNAP_DICTIONARY_TRANSFORM(MY_SNAP), FI, indent=2, ensure_ascii=False)
-        FI.close()
+    FI = open("output.json", "a+")
+    json.dump(SNAP_DICTIONARY_TRANSFORM(MY_SNAP), FI, indent=2, ensure_ascii=False)
+    FI.close()
+
+
+FI = open("output.txt", "w+")
+FI.write('NUMBER       |TIMESTAMP              |CPU_LOAD_IN_%	   |MEM_USAGE  |VMEM_USAGE        |IO_READ        |IO_WRITE    |NET_USE             \n')
+FI.close()
+
+FI = open("output.json", "w+")
+FI.close()
 
 
 for i in range(conf.itteration_number):
