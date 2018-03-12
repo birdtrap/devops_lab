@@ -1,0 +1,44 @@
+PYTHONPATH: '[''/home/vagrant/python/lab6'', ''/home/vagrant/.pyenv/versions/3.6.4/lib/python36.zip'',
+  ''/home/vagrant/.pyenv/versions/3.6.4/lib/python3.6'', ''/home/vagrant/.pyenv/versions/3.6.4/lib/python3.6/lib-dynload'',
+  ''/home/vagrant/.pyenv/versions/3.6.4/lib/python3.6/site-packages'']'
+installed_packages:
+- wrapt 1.10.11
+- wcwidth 0.1.7
+- virtualenv 15.1.0
+- urllib3 1.22
+- traitlets 4.3.2
+- six 1.11.0
+- simplegeneric 0.8.1
+- setuptools 28.8.0
+- requests 2.18.4
+- PyYAML 3.12
+- pylint 1.8.2
+- Pygments 2.2.0
+- pyflakes 1.6.0
+- pycodestyle 2.3.1
+- ptyprocess 0.5.2
+- psutil 5.4.3
+- prompt-toolkit 1.0.15
+- pip 9.0.1
+- pickleshare 0.7.4
+- pexpect 4.4.0
+- parso 0.1.1
+- nose 1.3.7
+- mccabe 0.6.1
+- lazy-object-proxy 1.3.1
+- jedi 0.11.1
+- isort 4.3.4
+- ipython 6.2.1
+- ipython-genutils 0.2.0
+- ipdb 0.11
+- idna 2.6
+- flake8 3.5.0
+- decorator 4.2.1
+- chardet 3.0.4
+- certifi 2018.1.18
+- astroid 1.6.1
+name: 3.6.4
+pip_location: '[''/home/vagrant/.pyenv/versions/3.6.4/lib/python3.6/site-packages/pip'']'
+python_executable_location: /home/vagrant/.pyenv/versions/3.6.4/bin/python
+site-packages_location: '[''/home/vagrant/.pyenv/versions/3.6.4/lib/python3.6/site-packages'']'
+version: "3.6.4 (default, Mar  2 2018, 07:14:15) \n[GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]"
